@@ -6,7 +6,7 @@ const express = require("express");
 const router = express.Router();
 
 // MongoDB
-const { MongoClient } = require("mongodb");;
+const { MongoClient } = require("mongodb");
 const client = new MongoClient("mongodb://localhost:27017/mydb");
 
 // GET products list
@@ -50,7 +50,7 @@ router.post("/orders", async function (req, res) {
         }
 
         // write new order data
-        newOrder = { ...req.body, id: newId };
+        const newOrder = { ...req.body, id: newId };
         await orders.insertOne(newOrder);
         console.log(`/api/orders wrote new order: ${JSON.stringify(newOrder)}`);
 
