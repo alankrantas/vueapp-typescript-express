@@ -1,4 +1,4 @@
-# A Vue.js Demo Web App with Express Backend Service and MongoDB
+# A Vue.js Demo Web App with Express Backend Service and MongoDB - Full-Stack JavaScript
 
 This is a simple shopping demo app, based on the [Vue 3](https://vuejs.org/) / [TypeScript](https://www.typescriptlang.org/) examples in [_Essential Typescript_](https://github.com/Apress/essential-typescript-4) by Adam Freeman, which use Vue Router for routing, Vuex for data store and Bootstrap 5 for CSS styles.
 
