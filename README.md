@@ -4,7 +4,7 @@ This is a simple shopping demo app, based on the [Vue 3](https://vuejs.org/) / [
 
 The difference are:
 
-* Overhauled from Optional API to newer [Composition API](https://vuejs.org/guide/extras/composition-api-faq.html) for all Vue.js components. 
+* Overhauled Optional API to the newer, more concise [Composition API](https://vuejs.org/guide/extras/composition-api-faq.html) for all Vue.js components, including typed props and custom events. 
 * Added a simple transition effect for switching product categories
 * Added a _Clear Order_ button and some minor logic/style adjustment
 * Use [Node.js](https://nodejs.org/en/) + [Express](https://expressjs.com/) as frontend server as well as the backend REST APIs
