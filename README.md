@@ -1,6 +1,6 @@
 # A Vue.js Demo Web App with Express Backend Service and MongoDB - Full-Stack JavaScript
 
-This is a simple shopping demo app, based on the [Vue 3](https://vuejs.org/) / [TypeScript](https://www.typescriptlang.org/) examples in [_Essential Typescript_](https://github.com/Apress/essential-typescript-4) by Adam Freeman, which use Vue Router for routing, Vuex for data store and Bootstrap 5 for CSS styles.
+This is a simple shopping demo app, based on the [Vue 3](https://vuejs.org/) / [TypeScript](https://www.typescriptlang.org/) examples in [_Essential Typescript_](https://github.com/Apress/essential-typescript-4) by Adam Freeman, which use [Vue Router](https://router.vuejs.org/) for routing, [Vuex](https://vuex.vuejs.org/) for data store and Bootstrap 5 for CSS styles.
 
 The difference are:
 
@@ -14,15 +14,17 @@ The difference are:
 
 ## Run the Project
 
-Install Node.js and [MongoDB Community Server](https://www.mongodb.com/try/download/community). You can install MongoDB Compass in the process as well.
+Install Node.js and [MongoDB Community Server](https://www.mongodb.com/try/download/community). You can install MongoDB Compass (db browser) in the process as well.
 
-Then run the following commands from the project root directory to install required NPM libraries:
+> Tested on Windows 10 with Node.js 16.14.1.
+
+Run the following command from the project root directory to install NPM libraries:
 
 ```bash
 npm install
 ```
 
-Then create database, collections and product data in MongoDB:
+Then create database, collections and product data (documents) in MongoDB:
 
 ```bash
 node create_db.js
