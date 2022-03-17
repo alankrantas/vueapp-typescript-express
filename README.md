@@ -16,7 +16,7 @@ The difference are:
 
 Install Node.js and [MongoDB Community Server](https://www.mongodb.com/try/download/community). You can install MongoDB Compass (db browser) in the process as well.
 
-> Tested on Windows 10 with Node.js 16.14.1 and MongoDB 5.0.6.
+> Tested on Windows 10 with Node.js 16.14.1 and MongoDB 5.0.6. ```@Vue/Cli```-related packages are upgraded to 5.0.3.
 
 Run the following command from the project root directory to install NPM libraries:
 
