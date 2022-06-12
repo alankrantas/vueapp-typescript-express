@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import ProductList from "../views/ProductList.vue";
 import OrderDetails from "../views/OrderDetails.vue";
-import Summary from "../views/Summary.vue";
+import SummaryPage from "../views/SummaryPage.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   { 
     path: "/summary", 
-    component: Summary 
+    component: SummaryPage 
   },
   {
     path: '/',
