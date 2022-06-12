@@ -47,7 +47,7 @@ Startup the web server/REST services:
 node server.js
 ```
 
-The app will be served at ```http://localhost:8080```.
+The app will be served at ```http://localhost:3000```.
 
 ## Run the Project (both app and db as container)
 
