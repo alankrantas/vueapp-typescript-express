@@ -16,7 +16,7 @@ app.use(bodyParser.json());  // JSON parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const host = process.argv[2] || "localhost";
-const port = process.argv[3] || 8080;
+const port = process.argv[3] || 3000;
 
 app.listen(
     port,
