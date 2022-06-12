@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :order="order" />
+    <HeaderCart :order="order" />
     <div class="container-fluid">
       <div class="row">
         <div class="col-3 p-2">
@@ -31,7 +31,7 @@ import { useStore } from "vuex";
 import { Product, Order, ProductSelection } from "../data/entities";
 import ProductItem from "../components/ProductItem.vue";
 import CategoryList from "../components/CategoryList.vue";
-import Header from "../components/Header.vue";
+import HeaderCart from "../components/HeaderCart.vue";
 
 const store = useStore();
 const selectedCategory: string = computed(() => store.state.selectedCategory);

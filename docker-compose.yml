@@ -1,0 +1,32 @@
+version: "3.9"
+
+networks:
+  default:
+    driver: bridge
+
+services:
+
+  web:
+    build: .
+    container_name: vueapp
+    restart: always
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    links:
+      - db
+
+  db:
+    image: "mongo:latest"
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js

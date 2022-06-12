@@ -7,7 +7,7 @@ const router = express.Router();
 
 // MongoDB
 const { MongoClient } = require("mongodb");
-const client = new MongoClient("mongodb://localhost:27017/mydb");
+const client = new MongoClient("mongodb://root:example@host.docker.internal:27017?authMechanism=DEFAULT");
 
 // GET products list
 router.get("/products", async function (req, res) {

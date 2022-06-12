@@ -3,7 +3,7 @@
  */
 
 const { MongoClient } = require("mongodb");
-const client = new MongoClient("mongodb://localhost:27017/mydb");
+const client = new MongoClient("mongodb://root:example@localhost:27017?authMechanism=DEFAULT");
 
 async function run() {
 
@@ -27,7 +27,7 @@ async function run() {
             { "id": 7, "name": "Unsteady Chair", "category": "Chess", "description": "Secretly give your opponent a disadvantage", "price": 29.95 },
             { "id": 8, "name": "Human Chess Board", "category": "Chess", "description": "A fun game for the family", "price": 75 },
             { "id": 9, "name": "Bling Bling King", "category": "Chess", "description": "Gold-plated, diamond-studded King", "price": 1200 },
-        ]
+        ];
 
         const products = database.collection("products");
         const result = await products.insertMany(data, { ordered: true });
