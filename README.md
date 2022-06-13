@@ -54,7 +54,7 @@ The app will be served at ```http://localhost:3000```.
 The second way is to use Docker Compose to create two containers together:
 
 ```bash
-docker-compose -p vue-ts-express up -d
+docker-compose -p vue-ts-express -f docker-compose.yaml up -d
 ```
 
 The MongoDB container will initialize the data with ```mongo-init.js```. The app will be served at ```http://localhost:8080```.
