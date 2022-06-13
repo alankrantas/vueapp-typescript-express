@@ -13,8 +13,8 @@ async function run() {
         const database = client.db("mydb");
         console.log("DB created");
 
-        database.createCollection("products");
-        database.createCollection("orders");
+        await database.createCollection("products");
+        await database.createCollection("orders");
         console.log("Collections created");
 
         const data = [
@@ -30,9 +30,13 @@ async function run() {
         ];
 
         const products = database.collection("products");
+        if (await products.countDocuments() > 0) return;
+
         const result = await products.insertMany(data, { ordered: true });
         console.log(`${result.insertedCount} documents inserted`);
 
+    } catch (err) {
+        console.log(err);
     } finally {
         await client.close();
     }
