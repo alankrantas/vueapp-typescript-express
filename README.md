@@ -58,3 +58,8 @@ docker-compose -p vue-ts-express -f docker-compose.yaml up -d
 ```
 
 The MongoDB container will initialize the data with ```mongo-init.js```. The app will be served at ```http://localhost:8080```.
+
+## Notes
+
+* I only use the root user and expost localhost on both containers purely for convenience.
+* Due to some reason, I cannot reproduce this on my Win 11 laptop with the exactly same Node.js/Docker environment - the MongoDB container is correctly built and initialized but the authentication via JavaScript always fail. Haven't yet figure out why.
