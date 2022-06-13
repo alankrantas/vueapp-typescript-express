@@ -9,6 +9,7 @@ COPY service.js /usr/src/vueapp/service.js
 COPY deploy-package.json /usr/src/vueapp/package.json
 
 RUN npm install
+RUN npm prune
 
 EXPOSE 3000
 
