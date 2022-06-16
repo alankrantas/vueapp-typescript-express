@@ -57,7 +57,7 @@ The second way is to use Docker Compose to create two containers together:
 docker-compose -p vue-ts-express -f docker-compose.yml up -d
 ```
 
-The MongoDB container will initialize the data with ```mongo-init.js```. The app will be served at ```http://localhost:8080```.
+The MongoDB container will initialize the data with ```mongo-init.js```. The app will be served at ```http://localhost:3000```.
 
 ## Notes
 
