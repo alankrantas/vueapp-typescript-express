@@ -59,6 +59,12 @@ docker-compose -p vue-ts-express -f docker-compose.yml up -d
 
 The MongoDB container will initialize the data with ```mongo-init.js```. The app will be served at ```http://localhost:3000```.
 
+Stop all containers:
+
+```bash
+docker-compose -f docker-compose.yml down
+```
+
 ## Notes
 
 * I only use the root user and expost localhost on both containers purely for convenience.
