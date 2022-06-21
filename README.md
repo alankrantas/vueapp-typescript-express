@@ -68,4 +68,4 @@ docker-compose -f docker-compose.yml down
 ## Notes
 
 * I only use the root user and expost localhost on both containers purely for convenience.
-* Due to some reason, I cannot reproduce this on my Win 11 laptop with the exactly same Node.js/Docker environment - the MongoDB container is correctly built and initialized but the authentication via JavaScript always fail. Haven't yet figure out why.
+* I've enounter login problem when I forgot to remove my normally installed MongoDB on my system.
